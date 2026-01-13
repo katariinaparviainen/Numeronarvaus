@@ -3,6 +3,8 @@
 # Peli kysyy käyttäjää arvaamaan numeroa väliltä 1-10, kunnes käyttäjä arvaa numeron oikein.Sitten ohjelma suljetaan.
 # Mikäli numero oli liian iso tai pieni, kerrotaan käyttäjälle "liian iso" tai "liian pieni" ja kysytään uudelleen.
 # Mieti miten saat ohjelman toimimaan alla olevilla metodeilla ja ohjeilla.
+
+# eka versio
 import random
 from random import randint
 
