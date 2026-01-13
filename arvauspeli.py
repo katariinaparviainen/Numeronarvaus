@@ -1,6 +1,8 @@
 import random
 from random import randint
 
+# testi
+
 class NumberGuessingGame:
 
     def __init__(self):
