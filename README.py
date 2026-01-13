@@ -5,6 +5,8 @@
 # Mieti miten saat ohjelman toimimaan alla olevilla metodeilla ja ohjeilla.
 
 # eka versio
+
+import math
 import random
 from random import randint
 
