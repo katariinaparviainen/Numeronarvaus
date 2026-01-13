@@ -3,23 +3,49 @@
 # Peli kysyy käyttäjää arvaamaan numeroa väliltä 1-10, kunnes käyttäjä arvaa numeron oikein.Sitten ohjelma suljetaan.
 # Mikäli numero oli liian iso tai pieni, kerrotaan käyttäjälle "liian iso" tai "liian pieni" ja kysytään uudelleen.
 # Mieti miten saat ohjelman toimimaan alla olevilla metodeilla ja ohjeilla.
+import random
+from random import randint
 
 class NumberGuessingGame:
 
     def __init__(self):
-        pass  
+        self.count = 0
+        self.number = generate_random_number()
+        
        
     def generate_random_number(self):
-        pass 
+
+        return random.randint(1,10)
+        
       
     def ask_number(self):
-        pass 
+        self.guess = int(input("Anna numero välillä 1-10: "))
+        return self.guess
               
     def add_guess_count(self):
-        pass  
+        self.count += 1
+        
            
     def main_game_loop(self):
-        pass
+        while True:
+            guess = self.ask_number()
+       
+            if guess == self.number:
+                print("Numero oikein")
+                print(f"Arvauksia yhteensä {self.count}")
+                break
+            elif guess < self.number:
+                
+                print("Liian pieni")
+                print(f"Arvauksia tehty {self.count}")
+            else:
+                
+                print("Liian suuri")
+                print(f"Arvauksia tehty {self.count}")
+
+        
+
+        
 
 game = NumberGuessingGame()
 
